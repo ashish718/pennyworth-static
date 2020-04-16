@@ -178,7 +178,7 @@ img.emoji {
  </script>
 <meta name="google-site-verification" content="b_MuBKM-mEKzWd5RX8-OQURAJT7zgLBo54WFD1qMYBw" />
 </head>
-<body class="home page-template page-template-pages page-template-home page-template-pageshome-php page page-id-6">
+<body class="home page-template page-template-pages page-template-home page-template-pageshome-php page page-id-6" style="overflow-x: hidden;">
   <!-- <nav role="navigation" class="navbar " id="myNavbar"> -->
   <nav class="navbar" id="myNavbar">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -196,65 +196,194 @@ img.emoji {
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right" id="nav_bar">
 
-          <li><a href="#technologies">Services</a></li>
           <li><a href="#aboutus">About Us</a></li>
            <li><a href="#whyus">Why Us</a></li>
-          <li><a href="#features">Vision</a></li>
-          <li class="extra-right"><a href="#" class="ps-btn-bordered">Quote</a></li>
+          <li><a href="#features">Features</a></li>
+					<li><a href="#technologies">Services</a></li>
+          <li class="extra-right"><button class="ps-btn-bordered" data-toggle="modal" data-target="#contactModal">Quote</button></li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+<!--Contact Form Modal-->
+
+<div class="modal fade  come-from-modal right" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+				<div class="modal-content">
+						<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title text-center" id="myModalLabel">Drop us a message</h4>
+						</div>
+						<div class="modal-body">
+							<form method="post">
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+						</div>
+
+				</div>
+		</div>
+</div>
+
+
+	<!--Announcement Modal-->
+	<div class="modal fade  come-from-modal right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel">Alert</h4>
+	            </div>
+	            <div class="modal-body">
+	                Important Announcements
+	            </div>
+
+	        </div>
+	    </div>
+	</div>
 <section class="theme-bg" id="hero">
 	<div class="container hero mt5">
 		<div class="row mt5 home-page">
 			<div class="col-sm-6">
-				<div class="text-right heading_h1">TAX EFILING <br> SAVE TIME</div>
+				<div class="text-right heading_h1">TAX E<small>-</small>FILING <small>|</small><br> SAVE TIME <small>|</small></div>
 			</div>
 			<div class="col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-				<div class="big-para"> We are a Hyderabad based firm with highly qualified and trained professionals providing one-stop services for Income tax filings, GST, Management and Advisory services, Book-keeping, Direct Tax matters and other related services.</div>
+				<div class="big-para" style="text-align: justify; text-justify: inter-word;"> PennyWorth Consultants recognized as a premier consulting firm providing exceptional financial and professional services while maintaining highest level of integrity and professionalism.
+				<hr/>	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Announcements</button>
+				</div>
 			</div>
 		</div>
 	</div><!--/hero-->
 </section>
 
-<section id="features"class="rect-box burger">
+<section id="aboutus" class="burger" style="padding:60px 0;">
+	<div class="fluid-container">
+		<div class="row gutter text-center">
+			<div class="col-md-12">
+				<header class="text-center">
+					<h3 style="color:#ee2761;">About Us</h3>
+					<br>
+					<p style="text-align: justify; text-justify: inter-word;">We are a Hyderabad based firm with highly qualified and trained professionals providing one-stop services for Income tax filings, GST, Management and Advisory services, Book-keeping, Direct Tax matters and other related services.
+						<br>
+						<br>
+Tax products are designed to take the pain out of tedious income tax work. File income tax returns Online effortlessly or invest into intelligent tax savings options in minutes. 100% online, zero paperwork! You can take our expert tax advice both online and offline. To save money and time, I would personally recommend you online consultation through a trusted website. If you are in India, the best way to consult online is through _______.com which is the best platform to take tax advice from leading tax advisers and consultations. Company has a large community of professionals, tax planners, and financial advisors. You can instantly connect with these experts through chat and email to discuss your queries related to tax saving, income tax return filings, GST return, Accounting, investment and much more</p>
+			    </header>
+			</div>
+		</div>
+
+		<div class="row stats text-center mt5">
+			<div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+				<span class="semi-bold big-text">9 </span>
+				<span class="text-muted">Years of experience</span>
+			</div>
+			<div class="col-sm-3 col-xs-6 border-left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+				<span class="semi-bold big-text">20+ </span>
+				<span class="text-muted">Countries Served</span>
+			</div>
+
+			<div class="col-sm-3 col-xs-6 border-left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+				<span class="semi-bold big-text">60+ </span>
+				<span class="text-muted">Team members</span>
+			</div>
+
+			<div class="col-sm-3 col-xs-6 border-left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+			    <span class="semi-bold big-text">95% </span>
+				<span class="text-muted">Client Satisfaction</span>
+			</div>
+		</div>
+
+
+	</div>
+</section>
+
+
+<section id="whyus" class="burger why-imenso slate-2" style="padding:60px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<header class="text-center mb5">
+					<h3 style="color:#ee2761;">Why Us</h3>
+					<br>
+					<p style="text-align: justify; text-justify: inter-word;">Today’s dynamic market place is all about change. Massive shifts in technology, regulations and complaincies are changing the way we all conduct businesses. Financial advisory plays a key role in businesses adopting the change and fulfilling their full potential.
+						<br>
+						<br>
+Wherever you are in your business lifecycle, our aim is to help you make better and informed business decisions with greater confidence. From identifying key avenues for cost-cutting to finding new possibilities for revenue generation, we partner you in long-term sustainability and growth. Addressing all the areas of concern, we focus on finding innovative ways to maximise the revenue-base and minimize leackages. We handle partnerships and acquisitions with focused expertise while helping you retain your clients. Because, for us every penny matters! .
+<br>
+<br>
+Quality, Compliance and Peace-of-mind We are a client-focused Tax, Compliance and Business Advisory firm adding immense value to our clients business. Whether you are just starting your business or want to list your entity, we offer an entire spectrum of services to handle it all.</p>
+			    </header>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive" src="wp-content/themes/imenso/images/laravel_1.png" alt="offshore software development company in India">
+				<h4>Our CA & Expert guidance</h4>
+			</div>
+
+			<div class="col-md-4">
+				<img class="img-responsive" src="wp-content/themes/imenso/images/dot_net_1.png">
+				<h4>Quality, Cost &amp; Time to Market</h4>
+			</div>
+
+			<div class="col-md-4">
+				<img class="img-responsive" src="wp-content/themes/imenso/images/game_2.png">
+				<h4>Protecting Intellectual Property</h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="features"class="rect-box burger" style="padding:60px 0;">
 	<div class="container">
 		<header class="text-center">
-			<span class="anchor-title">Features</span>
-			<h1 class="heading_h2 theme-clr mt1">Trusted Company in India!</h1>
+			<h3 style="color:#ee2761;">Core Values</h3>
+			<br>
+			<p class="" style="text-align: justify; text-justify: inter-word;">
+				To focus on delivering value-based inputs that result in the optimization of client worth, business prospects and growth.
+				To create a dynamic, open environment that encourages innovative ideas, practicality, demonstrable value and practical implementation.
+				 To provide an inspiring and challenging work environment for the staff to meet their optimal levels of success and maintain a harmonious balance between professional and personal lives.
+</p>
 	    </header>
 
 		<div class="row mt5">
 			<div class="col-sm-6">
 				<div class="media hover-box">
-					<div class="pull-left">
-						<div class="animate-img">
-						   <img src="wp-content/themes/imenso/images/gear-black.png" class="cap-img" alt="Web-Development">
-						   <img src="wp-content/themes/imenso/images/gear-black.gif" class="cap-img-alt" alt="Web-Development">
-					    </div>
-					</div>
-					<div class="media-body">
-						<h4 class="mt0">Data Security</h4>
-						<p>We have always latest in technologies.</p>
 
-					</div>
+						<h4 class="mt0 text-center">Integrity</h4>
+						<p>Our INTEGRITY is the basic foundation on which we cement our relationship with our clients. </p>
+
 				</div>
 			</div>
 
 			<div class="col-sm-6">
 				<div class="media hover-box">
-					<div class="pull-left">
-						<div class="animate-img">
-						   <img src="wp-content/themes/imenso/images/mobile-black_3.png" class="cap-img" alt="Mobility">
-						   <img src="wp-content/themes/imenso/images/mobile-black_3.gif" class="cap-img-alt" alt="Mobility">
-					    </div>
-					</div>
-					<div class="media-body">
-						<h4 class="mt0">24x7 Live Support</h4>
-						<p>We believe in customer satisfaction.</p>
-					</div>
+
+						<h4 class="mt0 text-center">Confidentiality</h4>
+						<p>Protecting the CONFIDENTIALITY of information to which we have access is our fundamental principle.</p>
 				</div>
 			</div>
 		</div>
@@ -262,32 +391,17 @@ img.emoji {
 		<div class="row mt3">
 			<div class="col-sm-6">
 				<div class="media hover-box">
-					<div class="pull-left">
-						<div class="animate-img">
-						   <img src="wp-content/themes/imenso/images/ractangle.png" class="cap-img" alt="ractangle-black">
-						   <img src="wp-content/themes/imenso/images/ractangle-black.gif" class="cap-img-alt" alt="ractangle">
-					    </div>
-					</div>
 
-					<div class="media-body">
-						<h4 class="mt0">Tax Calculator</h4>
-						<p>We have always make transparency in work.</p>
-					</div>
+						<h4 class="mt0 text-center">Innovation</h4>
+						<p>We believe in INNOVATION and in the willingness to make things better or do things differently.</p>
 				</div>
 			</div>
 
 			<div class="col-sm-6">
 				<div class="media hover-box">
-					<div class="pull-left">
-						<div class="animate-img">
-						   <img src="wp-content/themes/imenso/images/book.png" class="cap-img" alt="book">
-						   <img src="wp-content/themes/imenso/images/book.gif" class="cap-img-alt" alt="book">
-					    </div>
-					</div>
-					<div class="media-body">
-						<h4 class="mt0">CA & Expert Guide</h4>
-						<p>We always do best for the business.</p>
-					</div>
+
+						<h4 class="mt0 text-center">Trust & Excellence</h4>
+						<p>We strive to act in a manner that builds TRUST & EXCELLENCE with our clients and other stakeholders</p>
 				</div>
 			</div>
 		</div>
@@ -413,62 +527,14 @@ img.emoji {
 	</div>
 </section>
 
-<section id="aboutus" class="burger">
-	<div class="container">
-		<div class="row gutter text-center">
-			<div class="col-md-12">
-				<header class="text-center">
-					<span class="anchor-title">About Us</span>
-					<h2 class="theme-clr mt1">We're a good Consultantcy company</h2>
-			    </header>
-			</div>
-		</div>
-
-		<div class="row stats text-center mt5">
-			<div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
-				<span class="semi-bold big-text">9 </span>
-				<span class="text-muted">Years of experience</span>
-			</div>
-			<div class="col-sm-3 col-xs-6 border-left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-				<span class="semi-bold big-text">20+ </span>
-				<span class="text-muted">Countries Served</span>
-			</div>
-
-			<div class="col-sm-3 col-xs-6 border-left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-				<span class="semi-bold big-text">60+ </span>
-				<span class="text-muted">Team members</span>
-			</div>
-
-			<div class="col-sm-3 col-xs-6 border-left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-			    <span class="semi-bold big-text">95% </span>
-				<span class="text-muted">Client Satisfaction</span>
-			</div>
-		</div>
-
-		<div class="row mt5">
-			<div class="col-md-12">
-				<div class="row mt5">
-					<div class="col-md-12">
-						<h3 class="mt0 text-center" > We are what our clients say</h3>
-						<p class="big-para">Since close to a decade, we've been working with startups to multibillion dollar organisations in achieving their business success.</p>
-						<img src="wp-content/themes/imenso/images/client/client-logo.png" class="img-responsive mt5" alt="client">
-					</div>
 
 
-				</div>
-
-
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="technologies" class="burger slate-2">
+<section id="technologies" class="burger slate-2" style="padding:60px 0;">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         <header class="">
-          <span class="anchor-title">Services</span>
+					<h3 style="color:#ee2761;">Services</h3>
           <h2 class="theme-clr mt1">Cutting edge technologies for your business success.</h2>
         </header>
       </div>
@@ -634,12 +700,14 @@ img.emoji {
   </div>
 </section>
 
+
+<!--Blog Section
 <section class="burger blog_area">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<header class="text-center mb5">
-					<span class="anchor-title">Blog</span>
+					<h3 style="color:#ee2761;">Blog</h3>
 					<h2 class="theme-clr mt1">Read our recent stories!</h2>
 			    </header>
 			</div>
@@ -663,7 +731,7 @@ img.emoji {
 		          		</div>
 		          	</div>
 	          	</div>
-	        </div>  <!--/col--><!--/col-->
+	        </div>
 
 
 
@@ -682,7 +750,7 @@ img.emoji {
 		          		</div>
 		          	</div>
 	          	</div>
-	        </div>  <!--/col--><!--/col-->
+	        </div>
 
 
 
@@ -701,7 +769,7 @@ img.emoji {
 		          		</div>
 		          	</div>
 	          	</div>
-	        </div>  <!--/col--><!--/col-->
+	        </div>
 
 
           	<div class="clearfix"></div>
@@ -711,57 +779,23 @@ img.emoji {
     </div>
 </section>
 
-<section id="whyus" class="burger why-imenso slate-2">
-	<div class="container">
+
+
+-->
+
+
+<footer class="burger" id="footer" style="padding:60px 0; background-color: black;">
+	<div class="container" style="color:white;">
 		<div class="row">
-			<div class="col-md-12">
-				<header class="text-center mb5">
-					<span class="anchor-title">Why Us</span>
-					<h2 class="theme-clr mt1">Why PennyWorth for best tax saving Consultantcy in India</h2>
-			    </header>
-			</div>
-		</div>
+			<div class="col-lg-6">
 
-		<div class="row">
-			<div class="col-md-4">
-				<img class="img-responsive" src="wp-content/themes/imenso/images/laravel_1.png" alt="offshore software development company in India">
-				<h4>Our CA & Expert guidance</h4>
-				<p>Dummy Text data</p>
-			</div>
-
-			<div class="col-md-4">
-				<img class="img-responsive" src="wp-content/themes/imenso/images/dot_net_1.png">
-				<h4>Quality, Cost &amp; Time to Market</h4>
-				<p>Dummy Text data</p>
-			</div>
-
-			<div class="col-md-4">
-				<img class="img-responsive" src="wp-content/themes/imenso/images/game_2.png">
-				<h4>Protecting Intellectual Property</h4>
-				<p>Dummy Text data</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-
-<footer class="burger" id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
 				<h4>Pennyworth Consultants LLP</h4>
 				<p>
 					#214, Paras Chambers, 3-5-890,  <br />Opp. Hyderabad Stock Exchange, <br>Himayat Nagar, Hyderabad - 500 029<br>	Phone: &nbsp;&nbsp;+91-93980 26431<br>
-
+					<a href="mailto:pennyworthconsultants@gmail.com"><span class="mild">Email:</span> &nbsp;&nbsp;pennyworthconsultants@gmail.com</a>
 				</p>
-				<!-- <h4>Contact</h4> -->
-				<ul>
-					<li><a href="mailto:pennyworthconsultants@gmail.com"><span class="mild">Email:</span> &nbsp;&nbsp;pennyworthconsultants@gmail.com</a></li>
-					<li><a  href="#"><span class="mild">Skype:</span> &nbsp;&nbsp;Skype Id</a></li>
 
-				</ul>
+
 			</div>
 
 
